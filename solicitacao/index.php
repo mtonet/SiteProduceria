@@ -110,15 +110,15 @@
                 <div id="errormessage"></div>
                 <form action="" method="post" role="form" class="contactForm">
                   <div class="form-group col-lg-6">
-                    <input type="text" name="cliente" class="form-control input-text" id="cliente" placeholder="Cliente" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="text" name="cliente" class="form-control input-text" id="cliente" placeholder="*Cliente" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validation"></div>
                   </div>
                   <div class="form-group col-lg-6">
-                    <input type="text" name="projeto" class="form-control input-text" id="projeto" placeholder="Projeto" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="text" name="projeto" class="form-control input-text" id="projeto" placeholder="*Projeto" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validation"></div>
                   </div>
                   <div class="form-group col-lg-4">
-                    <input type="text" name="solicitante" class="form-control input-text" id="solicitante" placeholder="Solicitante" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="text" name="solicitante" class="form-control input-text" id="solicitante" placeholder="*Solicitante" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validation"></div>
                   </div>
                   <div class="form-group col-lg-4">
@@ -131,7 +131,9 @@
                     <option value="Finalização">Finalização</option>
                     <option value="Produção">Produção</option>
                     <option value="Programação">Programação</option>
+                    <option value="Tratamento de Imagem">Tratamento de Imagem</option>
                     <option value="Criação">Criação</option>
+                    
                   </select>
                   <div class="validation"></div>
                 </div>
@@ -150,7 +152,7 @@
                 <div class="validation"></div>
               </div>
               <div class="form-group col-lg-4">  
-                <input type="text" name="dataEntrega" class="form-control input-text" id="dataEntrega" placeholder="Data Entrega" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="dataEntrega" class="form-control input-text" id="dataEntrega" placeholder="*Data Entrega" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-lg-6">
@@ -280,7 +282,7 @@
     <div class="validation"></div>
   </div>  
   <div class="form-group col-lg-12">
-    <textarea class="form-control" name="descricao" rows="7" data-rule="required" data-msg="Please write something for us" placeholder="Descrição"></textarea>
+    <textarea class="form-control" name="descricao" rows="7" data-rule="required" data-msg="Please write something for us" placeholder="*Descrição"></textarea>
     <div class="validation"></div>
   </div>
 
@@ -288,7 +290,16 @@
     <input type="text" name="link" class="form-control input-text" id="link" placeholder="Link" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
     <div class="validation"></div>
   </div>
+   
+   
+    <div class="form-group col-lg-12">
+    <input type="email" name="email" class="form-control input-text" id="link" placeholder="*Seu Email" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+    <div class="validation"></div>
+  </div>
   <div class="form-group col-lg-12">
+    <button type="file" class="btn upload-btn">Upload de arquivos</button>
+  </div>
+   <div class="form-group col-lg-12">
     <button type="submit" class="btn input-btn">GERAR SOLICITAÇÃO</button>
   </div>
 </form>
