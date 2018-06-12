@@ -25,25 +25,25 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- CSS -->
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/linecons.css" rel="stylesheet" type="text/css">
-  <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-  <link href="css/responsive.css" rel="stylesheet" type="text/css">
-  <link href="css/animate.css" rel="stylesheet" type="text/css">
+  <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="../css/style.css" rel="stylesheet" type="text/css">
+  <link href="../css/linecons.css" rel="stylesheet" type="text/css">
+  <link href="../css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="../css/responsive.css" rel="stylesheet" type="text/css">
+  <link href="../css/animate.css" rel="stylesheet" type="text/css">
 
   <!-- FONT -->
   <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
 
   <!-- JS -->
-  <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-  <script type="text/javascript" src="js/jquery.isotope.js"></script>
-  <script type="text/javascript" src="js/wow.js"></script>
-  <script type="text/javascript" src="js/classie.js"></script>
+  <script type="text/javascript" src="../js/jquery.1.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.js"></script>
+  <script type="text/javascript" src="../js/jquery-scrolltofixed.js"></script>
+  <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="../js/jquery.isotope.js"></script>
+  <script type="text/javascript" src="../js/wow.js"></script>
+  <script type="text/javascript" src="../js/classie.js"></script>
 
   <script type="text/javascript">
    $(document).ready(function(e) {
@@ -77,36 +77,7 @@
 </head>
 <body>
 
-  <!--Header_section-->
-  <header id="header_outer">
-    <div class="container">
-      <div class="header_section">
-        <div class="logo fadeInDown animated"><a href="index.html"><img src="img/produceria-logo.png" alt=""></a></div>
-        <nav class="nav" id="nav">
-          <ul class="toggle">
-            <li><a href="index.html#top_content">Home</a></li>
-            <li><a href="index.html#service">Serviços</a></li>
-            <li><a href="index.html#work_outer">Trabalhos</a></li>
-            <li><a href="index.html#Portfolio">Portifólio</a></li>
-            <li><a href="index.html#client_outer">Sobre Nós</a></li>
-            <li><a href="index.html#team">Equipe</a></li>
-            <li><a href="index.html#contact">Contato</a></li>
-          </ul>
-          <ul class="">
-            <li><a href="index.html#top_content">Home</a></li>
-            <li><a href="index.html#service">Serviços</a></li>
-            <li><a href="index.html#work_outer">Trabalhos</a></li>
-            <li><a href="index.html#Portfolio">Portifólio</a></li>
-            <li><a href="index.html#client_outer">Sobre Nós</a></li>
-            <li><a href="index.html#team">Equipe</a></li>
-            <li><a href="index.html#contact">Contato</a></li>
-          </ul>
-        </nav>
-        <a class="res-nav_click animated wobble wow"  href="javascript:void(0)"><i class="fa-bars"></i></a>
-      </div>
-    </div>
-  </header>
-  <!--Header_section--> 
+ <?php include '../includes/menu.php';?>
 
   <!--Trabalhe Conosco--> 
   <footer class="footer_section" id="contact">

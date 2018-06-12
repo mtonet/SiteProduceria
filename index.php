@@ -1,3 +1,51 @@
+<?php
+if (isset($_POST['BTEnvia'])) {
+	
+	//Variaveis de POST, Alterar somente se necessário 
+	//====================================================
+	$nome = $_POST['nome'];
+	$email = $_POST['email'];
+	$telefone = $_POST['assunto']; 
+	$mensagem = $_POST['mensagem'];
+	//====================================================
+	
+	//REMETENTE --> ESTE EMAIL TEM QUE SER VALIDO DO DOMINIO
+	//==================================================== 
+	$email_remetente = "form@produceria.com.br"; // deve ser uma conta de email do seu dominio 
+	//====================================================
+	
+	//Configurações do email, ajustar conforme necessidade
+	//==================================================== 
+	$email_destinatario = "marcelo.tonet@produceria.com.br"; // pode ser qualquer email que receberá as mensagens
+	$email_reply = "$email"; 
+	$email_assunto = "Contato formmail"; // Este será o assunto da mensagem
+	//====================================================
+	
+	//Monta o Corpo da Mensagem
+	//====================================================
+	$email_conteudo = "Nome = $nome \n"; 
+	$email_conteudo .= "Email = $email \n";
+	$email_conteudo .= "Assunto = $assunto \n"; 
+	$email_conteudo .= "Mensagem = $mensagem \n"; 
+	//====================================================
+	
+	//Seta os Headers (Alterar somente caso necessario) 
+	//==================================================== 
+	$email_headers = implode ( "\n",array ( "From: $email_remetente", "Reply-To: $email_reply", "Return-Path: $email_remetente","MIME-Version: 1.0","X-Priority: 3","Content-Type: text/html; charset=UTF-8" ) );
+	//====================================================
+	
+	//Enviando o email 
+	//==================================================== 
+	if (mail ($email_destinatario, $email_assunto, nl2br($email_conteudo), $email_headers)){ 
+					echo "</b>E-Mail enviado com sucesso!</b>"; 
+					} 
+			else{ 
+					echo "</b>Falha no envio do E-Mail!</b>"; } 
+	//====================================================
+} 
+?>
+
+
 <!doctype html>
 <html>
 <head>
@@ -76,6 +124,8 @@
  </script>
 </head>
 <body>
+  
+  
 
   <!--Header_section-->
   <header id="header_outer">
@@ -84,13 +134,13 @@
         <div class="logo fadeInDown animated"><a href="#top_content"><img src="img/produceria-logo.png" alt=""></a></div>
         <nav class="nav" id="nav">
           <ul class="toggle">
-            <li><a href="#top_content">Home</a></li>
-            <li><a href="#service">Serviços</a></li>
-            <li><a href="#work_outer">Trabalhos</a></li>
-            <li><a href="#Portfolio">Portifólio</a></li>
-            <li><a href="#client_outer">Sobre Nós</a></li>
-            <li><a href="#team">Equipe</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="http://localhost/SiteProduceria/index.php#top_content">Home</a></li>
+            <li><a href="http://localhost/SiteProduceria/index.php#service">Serviços</a></li>
+            <li><a href="http://localhost/SiteProduceria/index.php#work_outer">Trabalhos</a></li>
+            <li><a href="http://localhost/SiteProduceria/index.php#Portfolio">Portifólio</a></li>
+            <li><a href="http://localhost/SiteProduceria/index.php#client_outer">Sobre Nós</a></li>
+            <li><a href="http://localhost/SiteProduceria/index.php#team">Equipe</a></li>
+            <li><a href="http://localhost/SiteProduceria/index.php#contact">Contato</a></li>
           </ul>
           <ul class="">
             <li><a href="#top_content">Home</a></li>
@@ -1509,8 +1559,8 @@
                     <div class="col-lg-3">
                       <div class="contact_block">
                         <div class="contact_block_icon icon4 rollIn animated wow"><span><i class="fa-clipboard"></i></span></div>
-                        <span>Solicitação de Trabalho<br>
-                          <a href="solicitacao.html">Checklist</a> </span>
+                        <span><a href="trabalhe-conosco/index.php">Solicitação de Trabalho<br>
+                          Checklist</a> </span>
                         </div>
                         <br>
                       </div>
@@ -1526,8 +1576,8 @@
                     <ul class="contact-info-box address clearfix">
                       <li class="animated bounceIn wow delay-02s"><a href="mailto:orcamento@produceria.com.br">orcamento@produceria.com.br</a></li>
                       <li class="animated bounceIn wow delay-03s"><a href="https://produceria.wetransfer.com/" target="_blank">produceria.wetransfer.com</a></li>
-                      <li class="animated bounceIn wow delay-04s"><a href="trabalhe-conosco.html">Trabalhe conosco</a></li>
-                      <li class="animated bounceIn wow delay-05s"><a href="fornecedores.html">Seja nosso fornecedor</a></li>
+                      <li class="animated bounceIn wow delay-04s"><a href="trabalhe-conosco/index.php">Trabalhe conosco</a></li>
+                      <li class="animated bounceIn wow delay-05s"><a href="fornecedores/index.php">Seja nosso fornecedor</a></li>
                     </ul>
                     <ul class="social-link">
                       <li class="twitter animated bounceIn wow delay-02s"><a href="javascript:void(0)"><i class="fa-twitter"></i></a></li>
@@ -1541,7 +1591,7 @@
                     <div class="form">
                       <div id="sendmessage">Your message has been sent. Thank you!</div>
                       <div id="errormessage"></div>
-                      <form action="" method="post" role="form" class="contactForm">
+                      <form action="<? $PHP_SELF; ?>" method="POST"> 
                         <div class="form-group">
                           <input type="text" name="name" class="form-control input-text" id="name" placeholder="Seu nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                           <div class="validation"></div>
@@ -1559,7 +1609,7 @@
                           <div class="validation"></div>
                         </div>
 
-                        <button type="submit" class="btn input-btn">ENVIAR MENSAGEM</button>
+                        <button type="submit" class="btn input-btn" name="BTEnvia" value="Enviar">ENVIAR MENSAGEM</button>
                       </form>
                     </div>
                   </div>
@@ -1582,7 +1632,7 @@
               });
 
             });
-          </script> 
+          </script>
           <script>
             wow = new WOW(
             {
@@ -1696,8 +1746,7 @@ $(window).bind('resize', function () {
            jQuery('#all').click();
            return false;
          });
-       </script>
-       <script src="contactform/contactform.js"></script>
+    </script>
 
      </body>
      </html>
