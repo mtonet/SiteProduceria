@@ -50,8 +50,8 @@ $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cel
       </tr>
       <tr>
         <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$cliente.'</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$projeto.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$cliente.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$projeto.'</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
@@ -65,8 +65,8 @@ $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cel
       </tr>
       <tr>
         <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$solicitante.'</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$diretorArte.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$solicitante.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$diretorArte.'</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
@@ -80,8 +80,8 @@ $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cel
       </tr>
       <tr>
         <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$solicitcao.'</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$midia.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$solicitcao.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$midia.'</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
@@ -95,7 +95,7 @@ $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cel
       </tr>
       <tr>
         <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$dataInicial.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$dataInicial.'</td>
         <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ec0000; ">'.$dataEntrega.'</td>
       </tr>
       <tr>
@@ -110,8 +110,8 @@ $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cel
       </tr>
       <tr>
         <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$item.'</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$veiculo.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$item.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$veiculo.'</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
@@ -125,8 +125,8 @@ $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cel
       </tr>
       <tr>
         <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$formato.'</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$paginas.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$formato.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$paginas.'</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
@@ -140,8 +140,8 @@ $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cel
       </tr>
       <tr>
         <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$lombada.'</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$cores.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$lombada.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$cores.'</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
@@ -155,8 +155,8 @@ $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cel
       </tr>
       <tr>
         <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$resolucao.'</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$extensao.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$resolucao.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$extensao.'</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
@@ -170,8 +170,8 @@ $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cel
       </tr>
       <tr>
         <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$sangria.'</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$corteEspecial.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$sangria.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$corteEspecial.'</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
@@ -185,8 +185,8 @@ $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cel
       </tr>
       <tr>
         <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$quantidade.'</td>
-        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$link.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$quantidade.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$link.'</td>
       </tr>
       <tr>
         <td>&nbsp;</td>
@@ -200,7 +200,7 @@ $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cel
       </tr>
       <tr>
         <td>&nbsp;</td>
-        <td><span style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$email.'</span></td>
+        <td><span style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$email.'</span></td>
         <td>&nbsp;</td>
       </tr>
       <tr>
@@ -214,7 +214,7 @@ $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cel
         <td>&nbsp;</td>
       </tr>
       <tr>
-        <td colspan="3" style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; padding-left:30px "><span style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$descricao.'</span></td>
+        <td colspan="3" style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; padding-left:30px "><span style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#666; ">'.$descricao.'</span></td>
       </tr>
     </table></td>
   </tr>
