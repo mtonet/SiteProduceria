@@ -16,11 +16,11 @@ $mail->Password = 'plus2020'; // Senha da sua conta de email
  
 // DADOS DO REMETENTE
 $mail->Sender = "form@produceria.com.br"; // Conta de email existente e ativa em seu domínio
-$mail->From = "contato@produceria.com.br"; // Sua conta de email que será remetente da mensagem
+$mail->From = "trafego@produceria.com.br"; // Sua conta de email que será remetente da mensagem
 $mail->FromName = "Produceria"; // Nome da conta de email
  
 // DADOS DO DESTINATÁRIO
-$mail->AddAddress('trafego@produceria', 'Produceria'); // Define qual conta de email receberá a mensagem
+$mail->AddAddress('trafego@produceria.com.br', 'Produceria'); // Define qual conta de email receberá a mensagem
 //$mail->AddAddress('recebe2@dominio.com.br'); // Define qual conta de email receberá a mensagem
 //$mail->AddCC("$email"); // Define qual conta de email receberá uma cópia
 $mail->AddBCC("$email"); // Define qual conta de email receberá uma cópia oculta
@@ -30,7 +30,7 @@ $mail->IsHTML(true); // Define que o e-mail será enviado como HTML
 $mail->CharSet = 'utf-8'; // Charset da mensagem (opcional)
  
 // DEFINIÇÃO DA MENSAGEM
-$mail->Subject  = "Solicitação - Produceria"; // Assunto da mensagem
+$mail->Subject  = "$solicitcao - Produceria"; // Assunto da mensagem
 $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td bgcolor="#f5f5f5"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
