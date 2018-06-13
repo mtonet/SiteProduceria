@@ -33,172 +33,196 @@ $mail->CharSet = 'utf-8'; // Charset da mensagem (opcional)
 $mail->Subject  = "Solicitação - Produceria"; // Assunto da mensagem
 $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td colspan="2" bgcolor="#000000">&nbsp;</td>
+    <td bgcolor="#f5f5f5"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="60" colspan="2" bgcolor="#000000" style="padding-left:20px;"><img src="http://produceria.com.br/email/produceria-logo.png" alt="" /></td>
+        <td width="280" align="right" bgcolor="#000000"><span style="font-family:Arial, Helvetica, sans-serif; font-size:20px; color:#FFF; padding-right:20px">Solicitação</span></td>
+      </tr>
+      <tr>
+        <td width="39">&nbsp;</td>
+        <td width="281">&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Cliente</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Projeto</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$cliente.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$projeto.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Solicitante</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Responsável pela Criação</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$solicitante.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$diretorArte.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Orçamento</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Mídia Impressa</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$solicitcao.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$midia.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Data Inicial</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Data Entrega</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$dataInicial.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ec0000; ">'.$dataEntrega.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Item</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Veículo</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$item.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$veiculo.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Formato</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Páginas</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$formato.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$paginas.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Lombada</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Cores</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$lombada.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$cores.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Resolução </td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Extensão</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$resolucao.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$extensao.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Sangria</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Corte</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$sangria.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$corteEspecial.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Quantidade</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Link</td>
+      </tr>
+      <tr>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">&nbsp;</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$quantidade.'</td>
+        <td style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$link.'</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><span style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Email</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><span style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$email.'</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><span style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; ">Descrição</span></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="3" style="font-family:Arial, Helvetica, sans-serif; font-size:16px;  color:#000; padding-left:30px "><span style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#000; ">'.$descricao.'</span></td>
+      </tr>
+    </table></td>
   </tr>
   <tr>
-    <td colspan="2" bgcolor="#000000" align="center"><img src="http://produceria.com.br/email/produceria-logo.png" /></td>
+    <td bgcolor="#f5f5f5">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2" bgcolor="#000000">&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td width="300">&nbsp;</td>
-    <td width="300">&nbsp;</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:20px; color:#000;"><b>Solicitação</b></td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Cliente</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Projeto</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$cliente.'</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$projeto.'</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Solicitante</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Responsável pela Criação</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$solicitante.'</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$diretorArte.'</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Orçamento</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Mídia Impressa</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$solicitcao.'</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$midia.'</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Data Inicial</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Data Entrega</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$dataInicial.'</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$dataEntrega.'</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Item</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Veículo</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$item.'</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$veiculo.'</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Formato</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Páginas</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$formato.'</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$paginas.'</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Sem Lombada</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">4x4 cores</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$lombada.'</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$cores.'</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Resolução </td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Extensão</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$resolucao.'</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$extensao.'</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Sangria</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Corte</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$sangria.'</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$corteEspecial.'</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Quantidade</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Link</td>
-  </tr>
-  <tr>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$quantidade.'</td>
-    <td style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$link.'</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td colspan="2" style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Email</td>
-  </tr>
-  <tr>
-    <td colspan="2" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$email.'</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td colspan="2" style="font-family:Arial, Helvetica, sans-serif; font-size:18px; color:#000; padding:10px;">Descrição</td>
-  </tr>
-  <tr>
-    <td colspan="2" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#000; padding:10px;">'.$descricao.'</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td height="60" align="center" bgcolor="#000000"><span style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFF;">Rua Sarita Cyrillo 288 - Jadrim Paulista - +55 11 3854 8035</span></td>
   </tr>
 </table>'; // Texto da mensagem
 // anexar arquivo

@@ -16,7 +16,7 @@ if (isset($_POST['BTEnvia'])) {
 	
 	//Configurações do email, ajustar conforme necessidade
 	//==================================================== 
-	$email_destinatario = "marcelo.tonet@produceria.com.br"; // pode ser qualquer email que receberá as mensagens
+	$email_destinatario = "trafego@produceria.com.br"; // pode ser qualquer email que receberá as mensagens
 	$email_reply = "$email"; 
 	$email_assunto = "Contato formmail"; // Este será o assunto da mensagem
 	//====================================================
