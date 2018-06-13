@@ -222,7 +222,7 @@ $mail->Body .= '<table width="600" border="0" align="center" cellpadding="0" cel
     <td bgcolor="#f5f5f5">&nbsp;</td>
   </tr>
   <tr>
-    <td height="60" align="center" bgcolor="#000000"><span style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFF;">Rua Sarita Cyrillo 288 - Jadrim Paulista - +55 11 3854 8035</span></td>
+    <td height="60" align="center" bgcolor="#000000"><a href="#" style="font-color: #FFF; text-decoration: none;">Rua Sarita Cyrillo 288</a><span style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#FFF;">- Jardim Paulista - +55 11 3854 8035</span></td>
   </tr>
 </table>'; // Texto da mensagem
 // anexar arquivo
